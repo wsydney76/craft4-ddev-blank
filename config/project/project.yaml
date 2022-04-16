@@ -1,0 +1,30 @@
+dateModified: 1650099706
+email:
+  fromEmail: admin@example.com
+  fromName: 'Craft 4 Blank'
+  transportType: craft\mail\transportadapters\Sendmail
+graphql:
+  publicToken:
+    enabled: true
+    expiryDate: null
+meta:
+  __names__:
+    18e8e721-36cd-4c7a-a02a-44c513fb3cb8: 'Craft 4 Blank' # Craft 4 Blank
+    32d347b0-ea6e-469f-92f8-d59f3fd496c7: 'Public Schema'
+    761cddc2-d969-4560-b5de-4bf2a393cb8a: Common # Common
+    2393c71c-94e8-4e90-bb19-949696b8be0b: 'Craft 4 Blank' # Craft 4 Blank
+    9013e485-c018-45be-825d-d7223ee50703: 'Public Schema' # Public Schema
+system:
+  edition: solo
+  live: true
+  name: 'Craft 4 Blank'
+  retryDuration: null
+  schemaVersion: 4.0.0.9
+  timeZone: Europe/Berlin
+users:
+  allowPublicRegistration: false
+  deactivateByDefault: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true
