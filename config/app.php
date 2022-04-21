@@ -18,20 +18,12 @@
  */
 
 use craft\helpers\App;
-use Psr\Log\LogLevel;
+use modules\main\MainModule;
 
 return [
     'id' => App::env('APP_ID') ?: 'CraftCMS',
     'modules' => [
-        'my-module' => \modules\Module::class,
+        'my-module' => MainModule::class,
     ],
     //'bootstrap' => ['my-module'],
-    'components' => [
-        'log' => [
-            'monologTargetConfig' => [
-                // Remove `debug` messages in `devMode`
-                'level' => YII_DEBUG ? LogLevel::INFO : LogLevel::WARNING,
-            ],
-        ]
-    ]
 ];

@@ -1,7 +1,8 @@
 <?php
-namespace modules;
+namespace modules\main;
 
 use Craft;
+use yii\base\Module;
 
 /**
  * Custom module class.
@@ -20,7 +21,7 @@ use Craft;
  * Learn more about Yii module development in Yii's documentation:
  * http://www.yiiframework.com/doc-2.0/guide-structure-modules.html
  */
-class Module extends \yii\base\Module
+class MainModule extends Module
 {
     /**
      * Initializes the module.
@@ -32,9 +33,9 @@ class Module extends \yii\base\Module
 
         // Set the controllerNamespace based on whether this is a console or web request
         if (Craft::$app->getRequest()->getIsConsoleRequest()) {
-            $this->controllerNamespace = 'modules\\console\\controllers';
+            $this->controllerNamespace = 'modules\\main\\console\\controllers';
         } else {
-            $this->controllerNamespace = 'modules\\controllers';
+            $this->controllerNamespace = 'modules\\main\\controllers';
         }
 
         parent::init();
