@@ -23,7 +23,7 @@ use modules\main\MainModule;
 return [
     'id' => App::env('APP_ID') ?: 'CraftCMS',
     'modules' => [
-        'my-module' => MainModule::class,
+        'main' => MainModule::class,
     ],
-    //'bootstrap' => ['my-module'],
+    //'bootstrap' => ['main'],
 ];
