@@ -51,6 +51,9 @@ return [
     // Whether images transforms should be generated before page load.
     'generateTransformsBeforePageLoad' => true,
 
+    // Whether Craft should optimize images for reduced file sizes without noticeably reducing image quality
+    'optimizeImageFilesize' => false,
+
     // Whether asset URLs should be revved so browsers don’t load cached versions when they’re modified.
     'revAssetUrls' => true,
 

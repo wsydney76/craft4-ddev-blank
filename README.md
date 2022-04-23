@@ -9,3 +9,4 @@ the following additions:
 * Added /web/cpresources, /node_modules to .gitignore
 * Added some settings to config/general.php
 * Added config/redactor/Custom.json as a safe Redactor config
+* Added code to prevent password managers like Bitdefender Wallet from falsely inserting credentials into user form

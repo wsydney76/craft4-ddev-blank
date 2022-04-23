@@ -41,5 +41,10 @@ class MainModule extends Module
         parent::init();
 
         // Custom initialization code goes here...
+
+        // Prevent password managers like Bitdefender Wallet from falsely inserting credentials into user form
+        Craft::$app->view->hook('cp.users.edit.content', function(array &$context) {
+            return '<input type="text" name="dummy-first-name" value="wtf" style="display: none">';
+        });
     }
 }
