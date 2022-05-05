@@ -1,7 +1,7 @@
 {
   "description": "Empty Craft 4 Starter",
   "require": {
-    "craftcms/cms": "4.0.x-dev",
+    "craftcms/cms": "^4.0.0",
     "vlucas/phpdotenv": "^5.4.0"
   },
   "require-dev": {
@@ -38,7 +38,5 @@
       "@php craft migrate/all --interactive=0",
       "@php craft on"
     ]
-  },
-  "minimum-stability": "dev",
-  "prefer-stable": true
+  }
 }
