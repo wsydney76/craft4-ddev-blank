@@ -7,6 +7,6 @@ the following additions:
 * Moves example module to modules/main
 * Set system timezone to Europe/Berlin
 * Added /web/cpresources, /node_modules to .gitignore
-* Added some settings to config/general.php
+* Added more config settings and use fluent syntax in config/general.php
 * Added config/redactor/Custom.json as a safe Redactor config
 * Added code to prevent password managers like Bitdefender Wallet from falsely inserting credentials into user form
