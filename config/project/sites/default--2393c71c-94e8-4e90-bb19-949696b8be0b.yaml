@@ -3,7 +3,7 @@ enabled: true
 handle: default
 hasUrls: true
 language: en-US
-name: 'Craft 4 Blank'
+name: Default
 primary: true
-siteGroup: 18e8e721-36cd-4c7a-a02a-44c513fb3cb8
+siteGroup: 18e8e721-36cd-4c7a-a02a-44c513fb3cb8 # Craft 4 Blank
 sortOrder: 1

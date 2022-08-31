@@ -1,16 +1,16 @@
-dateModified: 1650099706
+dateModified: 1661942355
 email:
   fromEmail: admin@example.com
   fromName: 'Craft 4 Blank'
   transportType: craft\mail\transportadapters\Sendmail
 meta:
   __names__:
-    2be01897-dbaf-4c19-a6d9-db80ada8fc8f: 'Public Schema'
-    18e8e721-36cd-4c7a-a02a-44c513fb3cb8: 'Craft 4 Blank'
-    32d347b0-ea6e-469f-92f8-d59f3fd496c7: 'Public Schema'
-    761cddc2-d969-4560-b5de-4bf2a393cb8a: Common
-    2393c71c-94e8-4e90-bb19-949696b8be0b: 'Craft 4 Blank'
-    9013e485-c018-45be-825d-d7223ee50703: 'Public Schema'
+    2be01897-dbaf-4c19-a6d9-db80ada8fc8f: 'Public Schema' # Public Schema
+    18e8e721-36cd-4c7a-a02a-44c513fb3cb8: Default # Craft 4 Blank
+    32d347b0-ea6e-469f-92f8-d59f3fd496c7: 'Public Schema' # Public Schema
+    761cddc2-d969-4560-b5de-4bf2a393cb8a: Common # Common
+    2393c71c-94e8-4e90-bb19-949696b8be0b: Default # Default
+    9013e485-c018-45be-825d-d7223ee50703: 'Public Schema' # Public Schema
 system:
   edition: solo
   live: true

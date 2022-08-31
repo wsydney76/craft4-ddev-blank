@@ -1,7 +1,7 @@
 {
   "description": "Empty Craft 4 Starter",
   "require": {
-    "craftcms/cms": "4.2.0.2",
+    "craftcms/cms": "4.2.3",
     "vlucas/phpdotenv": "^5.4.0"
   },
   "require-dev": {
@@ -24,12 +24,6 @@
     }
   },
   "scripts": {
-    "post-root-package-install": [
-      "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
-    ],
-    "post-install-cmd": [
-      "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
-    ],
     "pre-update-cmd": [
       "@php craft off"
     ],

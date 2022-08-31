@@ -22,27 +22,16 @@
 
 namespace modules\_faux;
 
-//use craft\commerce\elements\Order;
-//use craft\commerce\elements\Product;
-//use craft\commerce\elements\Variant;
-//use craft\commerce\models\LineItem;
-//use craft\commerce\Plugin;
-
 use craft\elements\Asset;
-use craft\elements\Category;
 use craft\elements\Entry;
-use craft\elements\GlobalSet;
 use craft\elements\MatrixBlock;
-use craft\elements\Tag;
-use craft\elements\User;
-use craft\models\Site;
 use craft\web\twig\variables\Paginate;
 use Illuminate\Support\Collection;
 use Twig\Extension\AbstractExtension;
 use Twig\Extension\GlobalsInterface;
 
 /**
- * @author    nystudio107
+ * @author    nystudio107 / wsydney76
  * @package   FauxTwigExtension
  * @since     1.0.0
  */
@@ -51,35 +40,25 @@ class FauxTwigExtension extends AbstractExtension implements GlobalsInterface
     public function getGlobals(): array
     {
         return [
-            // Craft Elements
-            'element' => new Entry(),
-            'asset' => new Asset(),
-            'block' => new MatrixBlock(),
-            'image' => new Asset(),
-            'category' => new Category(),
-            'tag' => new Tag(),
-            'entry' => new Entry(),
-            'draft' => new Entry(),
-            'siteInfo' => new GlobalSet(),
 
+            // Inserted by Craft CMS
+            'entry' => new Entry(),
+
+            // Custom variables, templates should use these names by convention
+
+            // Craft Elements
+            'image' => new Asset(),
+            'block' => new MatrixBlock(),
+
+            // Collections (Query results)
             'entries' => new Collection(),
+            'blocks' => new Collection(),
             'images' => new Collection(),
 
-            'currentUser' => new User(),
-            'currentSite' => new Site(),
-
+            // Pagination
             'pageInfo' => new Paginate(),
 
-            // Commerce Elements
-            //'lineItem' => new LineItem(),
-            //'order' => new Order(),
-            //'product' => new Product(),
-            //'variant' => new Variant(),
-            //'commerce' => new Plugin(),
 
-
-            // Third party globals
-            //'seomatic' => new \nystudio107\seomatic\variables\SeomaticVariable(),
         ];
     }
 }
