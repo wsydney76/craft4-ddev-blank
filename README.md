@@ -10,3 +10,10 @@ the following additions:
 * Added more config settings and use fluent syntax in config/general.php
 * Added config/redactor/Custom.json as a safe Redactor config
 * Added code to prevent password managers like Bitdefender Wallet from falsely inserting credentials into user form
+* Added setup/install for automated installation under ddev, creates a user `admin/password`
+
+## DDEV Installation
+
+* Clone repository
+* `cd` into project directory
+* Run `bash setup/install`
