@@ -4,3 +4,4 @@
 .DS_Store
 /web/cpresources
 /node_modules
+/config/license.key
